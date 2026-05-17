@@ -61,7 +61,7 @@ const Academics = () => {
 
               <div className="mt-1 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-400/8 px-4 py-2 text-sm text-slate-200 transition duration-300 group-hover:border-cyan-200/35">
                 <span className="text-xs font-semibold uppercase tracking-[0.22em] text-cyan-200">CGPA</span>
-                <span className="font-semibold text-slate-100">9.07</span>
+                <span className="font-semibold text-slate-100">8.99</span>
                 <span className="text-slate-400">/ 10</span>
               </div>
             </div>

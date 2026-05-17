@@ -67,3 +67,12 @@ npm run preview
 - Replace "Your Name" in `src/components/HeroSection.jsx` and `src/components/Footer.jsx`.
 - Update placeholder project/demo links in `src/data/portfolioData.js`.
 - Adjust content and styling tokens in `tailwind.config.js` and `src/index.css`.
+
+## EmailJS Contact Form
+
+The contact form in `src/components/ContactSection.jsx` is wired to EmailJS.
+
+1. Copy `.env.example` to `.env.local`.
+2. Fill in your EmailJS service ID, template ID, and public key.
+3. In your EmailJS template, map the fields `from_name`, `from_email`, `message`, and `to_email`.
+4. Set the template recipient to your email address, or use `to_email` in the template so the messages arrive in your inbox.

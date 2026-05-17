@@ -1,19 +1,14 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-slate-800 px-5 py-10 md:px-8">
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 text-sm text-slate-400 md:flex-row">
-        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-        <div className="flex items-center gap-5">
-          <a href="https://github.com/" target="_blank" rel="noreferrer" className="transition hover:text-cyan-300">
-            GitHub
+    <footer className="border-t border-slate-800 px-5 py-8 md:px-8">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <p className="text-center md:text-left">2026 @ Sunil Kumawat</p>
+        <div className="flex items-center justify-center gap-6 md:justify-end">
+          <a href="#projects" className="transition hover:text-cyan-400">
+            Projects
           </a>
-          <a
-            href="https://linkedin.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="transition hover:text-cyan-300"
-          >
-            LinkedIn
+          <a href="#contact" className="transition hover:text-cyan-400">
+            Contact
           </a>
         </div>
       </div>

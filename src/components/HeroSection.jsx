@@ -21,7 +21,7 @@ const HeroSection = () => {
             Full Stack Web Developer / AI/ML Engineer
           </p>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-slate-300 md:text-lg">
-            I build elegant, fast, and scalable web experiences that connect clean interface design with strong backend architecture.
+            Building next-generation digital products with modern web technologies, artificial intelligence, machine learning, and scalable cloud-based architectures.
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
