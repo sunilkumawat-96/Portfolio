@@ -10,7 +10,7 @@ const CertificateCard = ({ item, index }) => {
       transition={{ duration: 0.4, delay: index * 0.07 }}
       className="group rounded-2xl border border-slate-800 bg-slate-900/70 p-5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-300/35 hover:shadow-[0_16px_35px_-24px_rgba(34,211,238,0.45)]"
     >
-      <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-300/12 text-cyan-300">
+      <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/12 text-amber-400">
         <FaCertificate className="text-lg" aria-hidden="true" />
       </div>
 
@@ -26,7 +26,7 @@ const CertificateCard = ({ item, index }) => {
           className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-cyan-200 transition hover:text-cyan-100"
         >
           View Certificate
-          <FaArrowUpRightFromSquare aria-hidden="true" />
+          <FaArrowUpRightFromSquare aria-hidden="true" className="text-amber-400" />
         </a>
       )}
     </motion.article>

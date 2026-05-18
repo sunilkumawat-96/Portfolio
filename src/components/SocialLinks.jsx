@@ -4,17 +4,20 @@ import { FaFileLines, FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 const socialLinks = [
   {
     label: 'Resume',
-    href: '/Sunil_Resume1705.pdf',
+    href: '/Sunil_Kumawat_Resume.pdf',
+    external: false,
     icon: FaFileLines,
   },
   {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/sunil-kumawat-544596375',
+    external: true,
     icon: FaLinkedinIn,
   },
   {
     label: 'GitHub',
     href: 'https://github.com/sunilkumawat-96',
+    external: true,
     icon: FaGithub,
   },
 ]
@@ -22,12 +25,12 @@ const socialLinks = [
 const SocialLinks = () => {
   return (
     <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-      {socialLinks.map(({ label, href, icon: Icon }, index) => (
+      {socialLinks.map(({ label, href, external, icon: Icon }, index) => (
         <motion.a
           key={label}
           href={href}
-          target="_blank"
-          rel="noreferrer"
+          target={external ? '_blank' : undefined}
+          rel={external ? 'noreferrer' : undefined}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 0.15 + index * 0.06 }}

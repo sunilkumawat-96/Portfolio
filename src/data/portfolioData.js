@@ -260,6 +260,7 @@ export const hackathons = [
     techStack: ['Full Stack Development', 'Rapid Prototyping', 'Team Collaboration'],
     result: 'Participant',
     credentialUrl: 'https://github.com/Sattar078/IntervAI',
+    liveProjectUrl: 'https://interv-ai-tan.vercel.app/',
     certificateImage: '/HAV-50.jpg',
   },
   {
@@ -294,4 +295,15 @@ export const workshops = [
     result: 'Completed',
     certificateImage: '/AI_powered.pdf.pdf',
   },
+]
+
+export const tools = [
+  'Git',
+  'GitHub',
+  'VS Code',
+  'Cursor',
+  'Vercel',
+  'Netlify',
+  'Firebase',
+  'npm',
 ]

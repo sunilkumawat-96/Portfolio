@@ -38,24 +38,36 @@ const HackathonCard = ({ item, index }) => {
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-4">
+        {item.liveProjectUrl && (
+          <a
+            href={item.liveProjectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 rounded-lg border-2 border-transparent bg-gradient-to-r from-amber-500/40 to-orange-500/30 px-5 py-2.5 text-sm font-semibold text-amber-50 shadow-[0_0_15px_rgba(251,146,60,0.2)] transition duration-300 hover:from-amber-500/60 hover:to-orange-500/50 hover:shadow-[0_0_25px_rgba(251,146,60,0.4)]"
+          >
+            Live Project
+            <FaArrowUpRightFromSquare aria-hidden="true" className="text-amber-400" />
+          </a>
+        )}
+
         {item.credentialUrl && (
           <a
             href={item.credentialUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 rounded-lg border-2 border-transparent bg-gradient-to-r from-cyan-500/40 to-cyan-600/30 px-5 py-2.5 text-sm font-semibold text-cyan-50 shadow-[0_0_15px_rgba(34,211,238,0.2)] transition duration-300 hover:from-cyan-500/60 hover:to-cyan-600/50 hover:shadow-[0_0_25px_rgba(34,211,238,0.4)]"
+            className="inline-flex items-center gap-2.5 rounded-lg border-2 border-transparent bg-gradient-to-r from-amber-500/40 to-orange-500/30 px-5 py-2.5 text-sm font-semibold text-amber-50 shadow-[0_0_15px_rgba(251,146,60,0.2)] transition duration-300 hover:from-amber-500/60 hover:to-orange-500/50 hover:shadow-[0_0_25px_rgba(251,146,60,0.4)]"
           >
-            {isGitHubUrl ? (
-              <>
-                <FaGithub aria-hidden="true" className="text-lg" />
-                View Project on GitHub
-              </>
-            ) : (
-              <>
-                View Credential
-                <FaArrowUpRightFromSquare aria-hidden="true" />
-              </>
-            )}
+              {isGitHubUrl ? (
+                <>
+                  <FaGithub aria-hidden="true" className="text-amber-400 text-lg" />
+                  View Project on GitHub
+                </>
+              ) : (
+                <>
+                  View Credential
+                <FaArrowUpRightFromSquare aria-hidden="true" className="text-amber-400" />
+                </>
+              )}
           </a>
         )}
 
@@ -67,7 +79,7 @@ const HackathonCard = ({ item, index }) => {
             className="ml-auto inline-flex items-center gap-2.5 rounded-lg border-2 border-transparent bg-gradient-to-r from-amber-500/40 to-orange-500/30 px-5 py-2.5 text-sm font-semibold text-amber-50 shadow-[0_0_15px_rgba(251,146,60,0.2)] transition duration-300 hover:from-amber-500/60 hover:to-orange-500/50 hover:shadow-[0_0_25px_rgba(251,146,60,0.4)]"
           >
             View Certificate
-            <FaArrowUpRightFromSquare aria-hidden="true" className="text-lg" />
+            <FaArrowUpRightFromSquare aria-hidden="true" className="text-amber-400 text-lg" />
           </a>
         )}
       </div>

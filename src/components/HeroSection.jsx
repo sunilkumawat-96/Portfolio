@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks'
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden px-5 pb-20 pt-16 md:px-8 md:pt-24">
-      <div className="absolute inset-x-0 top-0 h-[540px] bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.16),_transparent_40%),linear-gradient(180deg,rgba(15,23,42,0.95),rgba(2,6,23,0))]" />
+      <div className="absolute inset-x-0 top-0 md:h-[540px] h-[360px] pointer-events-none bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.16),_transparent_40%),linear-gradient(180deg,rgba(15,23,42,0.95),rgba(2,6,23,0))]" />
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
         <motion.div
           initial={{ opacity: 0, y: 28 }}

@@ -121,7 +121,7 @@ const renderSkillPanel = (groups, isExpanded, setIsExpanded, title, buttonLabel)
   </motion.div>
 )
 
-const SkillsSection = ({ skillGroups, aiMlSkillGroups }) => {
+const SkillsSection = ({ skillGroups, aiMlSkillGroups, tools = [] }) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const [isAiMlExpanded, setIsAiMlExpanded] = useState(false)
 
@@ -138,6 +138,33 @@ const SkillsSection = ({ skillGroups, aiMlSkillGroups }) => {
           {renderSkillPanel(skillGroups, isExpanded, setIsExpanded, 'Full Stack Skills', 'full stack skills')}
           {renderSkillPanel(aiMlSkillGroups, isAiMlExpanded, setIsAiMlExpanded, 'AI/ML Skills', 'ai/ml skills')}
         </div>
+        {tools && tools.length > 0 && (
+          <div className="mt-8">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.45 }}
+              className="rounded-3xl border border-cyan-300/20 bg-[linear-gradient(120deg,rgba(8,47,73,0.72),rgba(15,23,42,0.88),rgba(12,74,110,0.5))] p-5 md:p-6"
+            >
+              <div>
+                <h3 className="font-heading text-2xl font-semibold text-slate-100 md:text-3xl">Tools</h3>
+                <p className="mt-2 text-sm text-slate-400">Tools and platforms I commonly use.</p>
+              </div>
+
+              <div className="mt-4 flex flex-wrap gap-3">
+                {tools.map((t) => (
+                  <span
+                    key={t}
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-700/60 bg-slate-900/60 px-3 py-2 text-sm font-medium text-slate-200"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        )}
       </div>
     </section>
   )
